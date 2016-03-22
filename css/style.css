@@ -1,0 +1,21 @@
+.hobd {
+  background: url(../images/rnbwleaf.jpg) no-repeat center center;
+    min-height: 100%;
+    background-size: cover;
+      background-position: center;
+    background-repeat: no-repeat;
+    
+    
+} 
+
+html {
+    height: 100%;
+    
+}
+
+#map {
+        width: 500px;
+        height: 400px;
+        background-color: aquamarine;
+      }
+

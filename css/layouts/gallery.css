@@ -69,6 +69,7 @@ h1,h2,h3,h4,h5,h6 {
 .text-box {
     background-color:darksalmon; /* pale pink */
     color:antiquewhite; /* pinkish white */
+   
 }
 
     .text-box-head {
@@ -113,7 +114,7 @@ h1,h2,h3,h4,h5,h6 {
     color:antiquewhite;
     text-align: center;
     padding: 1em;
-    font-size: 80%;
+    font-size: 70%;
 }
 
 @media (min-width: 30em) {
@@ -128,8 +129,9 @@ h1,h2,h3,h4,h5,h6 {
 
 
 body {
-  background: #384047;
-  text-align: center;
+  background: #cc99ff;
+  text-align: left;
+
 }
 
 ul {

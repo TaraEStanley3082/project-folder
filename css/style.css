@@ -8,6 +8,26 @@
     
 } 
 
+
+.ctbg {
+  background: url(../images/bwash.jpg) no-repeat center center;
+    min-height: 100%;
+    background-size: cover;
+      background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.abtbg {
+  background: url(../images/rndleaf.jpg) no-repeat center center;
+    min-height: 100%;
+    background-size: cover;
+      background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
 html {
     height: 100%;
     

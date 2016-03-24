@@ -1,8 +1,12 @@
 <!doctype html>
 <html lang="en">
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+
 <head>
-    <meta charset="utf-8">
+     <meta charset="utf-8">
+    
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
 
@@ -37,14 +41,10 @@
     
 
 </head>
-<body class="abtbg" ng-app="">
+<body class="abtbg">
 
-
-
-
-
-
-<div id="layout">
+    
+    <div id="layout">
     <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
@@ -74,26 +74,7 @@
             <h2> <img src="" style="max-width: 100%; height: auto;" alt="Description"><br> 
             </h2>
         </div>
-        
-        <!-- angularjs color box -->
-        
-        <p style="color:blue; font-style:bold">Hello! What is your favorite color?</p>
-           
 
-<div ng-app="" ng-init="myCol='lightblue'">
-
-<input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
-
-</div>
-
-<!-- angularjs resolves the expression and returns the result -->
-
-<div ng-include="'hide.html'">
- 
-</ng-include>
-    </div>
-        
-        
         <div class="content">
             <h2 class="content-subhead">How to use this layout</h2>
             <p>
@@ -108,7 +89,21 @@
             
            
     </div>
-</div>
+
+        
+        <div ng-app="app" ng-controller="MainCtrl as vm">
+            <h1>I don't have a newsletter but you can give me your email if you really want!</h1>
+            
+            
+            <form name="myForm">
+                <input type="email" name="myfield" ng-model="field" required minlength="5" />
+                <div ng-messages="myForm.myField.$error">
+                    <div ng-message="required"></div>
+                    <div ng-message="minlength"></div>
+                    <div ng-message="email"></div>
+                </div>
+                    
+        </form>
 
 
 

@@ -27,6 +27,13 @@
     
 }
 
+.erbg {
+  background: url(../images/sqrleaf.jpg) no-repeat center center;
+    min-height: 100%;
+    background-size: cover;
+      background-position: center;
+    background-repeat: no-repeat;
+
 
 html {
     height: 100%;
